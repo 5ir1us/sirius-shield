@@ -1,15 +1,45 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Built files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Build folders
+/build/
+/bin/
+/outputs/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration files
 local.properties
+*.keystore
+*.jks
+*.properties
+
+# Android Studio files
+.idea/
+*.iml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/misc.xml
+.idea/deploymentTargetDropDown.xml
+.idea/render.experimental.xml
+
+# External native build
+.externalNativeBuild/
+.cxx/
+
+# OS-specific files
+.DS_Store
+*.log
+*.hprof
+
+# Firebase/Google services (если нужно оставить в репо — удали эту строку)
+google-services.json
