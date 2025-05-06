@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.google.gms.google.services)
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -49,6 +51,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.config)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -56,4 +59,26 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    debugImplementation(libs.retrofit)
+    debugImplementation(libs.retrofit.converter.gson)
+    debugImplementation(libs.gson)
+    debugImplementation(libs.glide)
+    implementation(libs.okhttp)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.androidx.compose.navigation)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.applovin.sdk)
+    implementation(libs.ironsource.sdk)
+    implementation(libs.admob)
+    implementation(libs.play.billing)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler) {
+        exclude(group = "com.intellij", module = "annotations")
+    }
+    implementation(libs.lottie.compose)
+
 }
