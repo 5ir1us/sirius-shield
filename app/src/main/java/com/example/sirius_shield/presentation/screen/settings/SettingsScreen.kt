@@ -11,9 +11,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.google.firebase.annotations.concurrent.Background
+import okhttp3.internal.concurrent.TaskRunner
 
 
 @Composable
@@ -35,4 +39,12 @@ fun SettingsScreen(navController: NavHostController) {
             }
         }
     }
+}
+
+
+@Preview (showBackground = true)
+@Composable
+fun SettingsScreenPreview() {
+    val navController = rememberNavController()
+    SettingsScreen(navController = navController)
 }
