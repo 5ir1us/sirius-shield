@@ -1,29 +1,29 @@
 [versions]
-agp = "8.9.2"
+agp = "8.9.3"
 kotlin = "2.1.20"
 coreKtx = "1.16.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-lifecycleRuntimeKtx = "2.8.7"
+lifecycleRuntimeKtx = "2.9.0"
 activityCompose = "1.10.1"
-composeBom = "2025.04.01"
+composeBom = "2025.05.01"
 retrofit = "2.11.0"
 gson = "2.12.1"
 glide = "4.16.0"
 okhttp = "4.12.0"
 coroutines = "1.10.2"
 koin = "4.0.0"
-navigation = "2.8.9"
+navigation = "2.9.0"
 applovin = "13.2.0"
 ironsource = "8.8.0"
-admob = "24.2.0"
+admob = "24.3.0"
 billing = "7.1.1"
 room = "2.7.1"
 lottie = "6.6.0"
 googleGmsGoogleServices = "4.4.2"
-firebaseConfig = "22.1.1"
-
+firebaseConfig = "22.1.2"
+uiTextGoogleFonts = "1.8.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -70,6 +70,8 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie" }
 # Firebase Remote Config для удаленного управления настройками
 firebase-config = { group = "com.google.firebase", name = "firebase-config", version.ref = "firebaseConfig" }
+androidx-ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
