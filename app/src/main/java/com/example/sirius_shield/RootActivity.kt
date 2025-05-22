@@ -15,7 +15,6 @@ class RootActivity : ComponentActivity() {
             AppTheme {
                 AppNavGraph()
             }
-
         }
     }
 }

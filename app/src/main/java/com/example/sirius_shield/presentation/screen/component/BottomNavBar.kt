@@ -1,20 +1,16 @@
 package com.example.sirius_shield.presentation.screen.component
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
-import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -59,14 +55,8 @@ fun BottomNavBar(
                 MaterialTheme.colorScheme.outline.copy(alpha = 0.2f),
                 shape = RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp)
             )
-
-
     ) {
-        BottomNavItemsRow(
-            items,
-            selectedRoute,
-            oneItemSelected
-        )
+        BottomNavItemsRow(items, selectedRoute, oneItemSelected)
     }
 }
 
@@ -84,7 +74,7 @@ fun BottomNavItemsRow(
             .padding(top = 10.dp),
         horizontalArrangement = Arrangement.SpaceAround,
         verticalAlignment = Alignment.CenterVertically,
-        ) {
+    ) {
         items.forEach { item ->
             val isSelected = item.route == selectedRoute
 
@@ -103,7 +93,8 @@ fun BottomNavItemsRow(
                         .padding(top = 8.dp),
                     text = stringResource(item.titleId),
                     style = AppTypography.bodyMedium,
-                    color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onPrimary
+                    color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                    else MaterialTheme.colorScheme.onPrimary
                 )
             }
         }
@@ -139,12 +130,9 @@ fun LottieAnimationBottomNav(
         modifier = Modifier
             .size(size)
             .scale(scale)
-            .offset(y = 2.dp) ,
-
-
+            .offset(y = 2.dp),
     )
 }
-
 
 @Preview(showBackground = true)
 @Composable
@@ -152,5 +140,5 @@ fun BottomNavBarPreview() {
     BottomNavBar(
         selectedRoute = BottomNavItem.Home.route,
         oneItemSelected = {},
-        )
+    )
 }
