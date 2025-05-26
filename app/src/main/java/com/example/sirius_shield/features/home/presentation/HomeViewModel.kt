@@ -1,4 +1,4 @@
-package com.example.sirius_shield.presentation.screen.home
+package com.example.sirius_shield.features.home.presentation
 
 import androidx.lifecycle.ViewModel
 

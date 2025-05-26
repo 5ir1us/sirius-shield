@@ -1,4 +1,4 @@
-package com.example.sirius_shield.presentation.screen.component
+package com.example.sirius_shield.core.ui.component
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -30,7 +30,7 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
-import com.example.sirius_shield.presentation.theme.AppTypography
+import com.example.sirius_shield.core.ui.theme.AppTypography
 
 @Composable
 fun BottomNavBar(

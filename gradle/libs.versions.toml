@@ -24,6 +24,7 @@ lottie = "6.6.0"
 googleGmsGoogleServices = "4.4.2"
 firebaseConfig = "22.1.2"
 uiTextGoogleFonts = "1.8.2"
+datastore = "1.1.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -71,6 +72,9 @@ lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", versio
 # Firebase Remote Config для удаленного управления настройками
 firebase-config = { group = "com.google.firebase", name = "firebase-config", version.ref = "firebaseConfig" }
 androidx-ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
+datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+
+
 
 
 [plugins]

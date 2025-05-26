@@ -1,4 +1,4 @@
-package com.example.sirius_shield.presentation.theme
+package com.example.sirius_shield.core.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

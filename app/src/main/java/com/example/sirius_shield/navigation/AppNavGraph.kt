@@ -1,8 +1,7 @@
-package com.example.sirius_shield.presentation.navigation
+package com.example.sirius_shield.navigation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -11,11 +10,11 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.sirius_shield.R
-import com.example.sirius_shield.presentation.screen.component.AppTopBar
-import com.example.sirius_shield.presentation.screen.component.BottomNavBar
-import com.example.sirius_shield.presentation.screen.home.HomeScreen
-import com.example.sirius_shield.presentation.screen.info.InfoScreen
-import com.example.sirius_shield.presentation.screen.settings.SettingsScreen
+import com.example.sirius_shield.core.ui.component.AppTopBar
+import com.example.sirius_shield.core.ui.component.BottomNavBar
+import com.example.sirius_shield.features.home.presentation.HomeScreen
+import com.example.sirius_shield.features.info.presentation.InfoScreen
+import com.example.sirius_shield.features.settings.presentation.SettingsScreen
 
 @Composable
 fun AppNavGraph() {

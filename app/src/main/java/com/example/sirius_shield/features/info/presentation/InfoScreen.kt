@@ -1,4 +1,5 @@
-package com.example.sirius_shield.presentation.screen.settings
+package com.example.sirius_shield.features.info.presentation
+
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,8 +19,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 
 
+
 @Composable
-fun SettingsScreen(navController: NavHostController) {
+fun InfoScreen(navController: NavHostController) {
 
     Box(
         modifier = Modifier
@@ -28,7 +30,7 @@ fun SettingsScreen(navController: NavHostController) {
         contentAlignment = Alignment.Center
     ) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Text("⚙️ Это настройки", fontSize = 24.sp)
+            Text("⚙️ Info", fontSize = 24.sp)
             Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = {
                 navController.popBackStack()
@@ -42,7 +44,7 @@ fun SettingsScreen(navController: NavHostController) {
 
 @Preview (showBackground = true)
 @Composable
-fun SettingsScreenPreview() {
+fun InfoScreenPreview() {
     val navController = rememberNavController()
-    SettingsScreen(navController = navController)
+    InfoScreen(navController = navController)
 }

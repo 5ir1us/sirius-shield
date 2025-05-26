@@ -81,5 +81,6 @@ dependencies {
         exclude(group = "com.intellij", module = "annotations")
     }
     implementation(libs.lottie.compose)
+    implementation(libs.datastore)
 
 }
